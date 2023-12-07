@@ -1,11 +1,11 @@
-About microed-data
-==================
+About microed-data-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/microed-data-feedstock/blob/main/LICENSE.txt)
 
 Home: https://cryoem.ucla.edu/microed
 
 Package license: ISC
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/microed-data-feedstock/blob/main/LICENSE.txt)
 
 Summary: Test data for the MicroED tools
 
@@ -32,14 +32,14 @@ Current release info
 Installing microed-data
 =======================
 
-Installing `microed-data` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `microed-data` from the `conda-forge/label/microed-data_dev` channel can be achieved by adding `conda-forge/label/microed-data_dev` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/microed-data_dev
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `microed-data` can be installed with `conda`:
+Once the `conda-forge/label/microed-data_dev` channel has been enabled, `microed-data` can be installed with `conda`:
 
 ```
 conda install microed-data
@@ -54,26 +54,26 @@ mamba install microed-data
 It is possible to list all of the versions of `microed-data` available on your platform with `conda`:
 
 ```
-conda search microed-data --channel conda-forge
+conda search microed-data --channel conda-forge/label/microed-data_dev
 ```
 
 or with `mamba`:
 
 ```
-mamba search microed-data --channel conda-forge
+mamba search microed-data --channel conda-forge/label/microed-data_dev
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search microed-data --channel conda-forge
+mamba repoquery search microed-data --channel conda-forge/label/microed-data_dev
 
 # List packages depending on `microed-data`:
-mamba repoquery whoneeds microed-data --channel conda-forge
+mamba repoquery whoneeds microed-data --channel conda-forge/label/microed-data_dev
 
 # List dependencies of `microed-data`:
-mamba repoquery depends microed-data --channel conda-forge
+mamba repoquery depends microed-data --channel conda-forge/label/microed-data_dev
 ```
 
 
@@ -95,7 +95,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
