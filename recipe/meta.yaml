@@ -1,7 +1,7 @@
 {% set name = "MicroED data" %}
 {% set tarname = name|lower|replace(' ', '-') %}
 {% set urlname = tarname|replace('data', 'tools') %}
-{% set version = "0.1.0-dev.4" %}
+{% set version = "0.1.0-dev.8" %}
 
 package:
   name: {{ tarname }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://cryoem.ucla.edu/downloads/{{ urlname }}-{{ version }}.tar.gz
-  sha256: b1312f1c2a72758dafe231f4d26e3cfbf424b7e7184f3513073fda714189b7e6
+  sha256: 5fe6677f5d1f5eedfd50b8436b4c36918d1d7d4f1ad3da28b71a132ea9d19cb6
 
 build:
   noarch: generic
